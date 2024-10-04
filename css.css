@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #000000;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.subscribe-btn {
+    background-color: #ff4757;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    align-items: left;
+    padding: 80px 40px;
+    background-color: #111;
+    text-align: left;
+    flex-direction: column;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.email-container {
+    display: flex;
+    align-items: left;
+    background: linear-gradient(90deg, #fff 70%, #f00 100%);
+    padding: 3px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.5);
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: hidden; /* Ensure contents do not overflow the border */
+}
+
+.email-input {
+    border: none;
+    padding: 15px;
+    border-radius: 50px 0 0 50px;
+    width: 100%;
+    max-width: 500px;
+    font-size: 16px;
+    outline: none;
+    flex-grow: 1;
+}
+
+.start-btn {
+    background-color: #ff0054;
+    color: white;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.start-btn:hover {
+    background-color: #e0004a;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* About Section Styles */
+#about {
+    padding: 60px;
+    background-color: #050505;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f3f3f3;
+    background-color: rgb(187, 75, 75);
+}
+
+#about h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.about-text {
+    flex: 1;
+    padding: 10px;
+}
+
+.about-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.talk-btn {
+    background-color: #ff4757;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Coming Soon Section Styles */
+#coming-soon {
+    padding: 60px;
+    background-color: #333;
+    text-align: center;
+}
+
+#coming-soon h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+    background-color: rgb(187, 75, 75);
+}
+
+.coming-soon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.coming-soon-box {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    width: 150px;
+    font-size: 20px;
+    color: #ff4757;
+}
+
+/* Contact Us Section Styles */
+#contact {
+    padding: 60px;
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    background-color: rgb(187, 75, 75);
+}
+
+#contact p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#contact a {
+    color: #ff4757;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Rotating Text Styles */
+.rotating-text {
+    color: #ff4757; /* Color for the rotating text */
+    transition: color 0.3s ease;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="ttt.PNG" alt="Talel's Profile Image"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <a href="www.google.com" class="subscribe-btn">Subscribe</a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Hello, I'm Talel Zamouri</h2>
+            <p>I'm a <span class="rotating-text">Web Developer</span></p>
+            <div class="email-container">
+                <input type="email" class="email-input" placeholder="Enter Your Email">
+                <button class="start-btn">Let's Start</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <h3>Developer & Trader </h3> 
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a web developer. I can provide clean code. I'm also a trader in forex, stocks, and crypto. If you want to know what trading is: trading, in simple terms, is the act of buying and selling financial instruments (like shares, forex, and indices) without directly owning them, in the hopes of making a profit from changes in their price movements.</p>
+                <a href="#" class="talk-btn">Let's Talk</a>
+            </div>
+            <div class="about-image">
+                <img src="tt.jpg" alt="Profile Image">
+            </div>
+        </div>
+    </section>
+
+    <section id="coming-soon">
+        <h2>Services</h2>
+        <div class="coming-soon-container">
+            <div class="coming-soon-box">Coming Soon</div>
+            <div class="coming-soon-box">Coming Soon</div>
+            <div class="coming-soon-box">Coming Soon</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For more information, press this link:</p>
+        <p>
+            <a href="https://www.facebook.com/talel.otaku.7334/" target="_blank">Facebook</a> | 
+            <a href="https://www.instagram.com/homer_talel/?hl=en" target="_blank">Instagram</a> | 
+            <a href="https://telegram.org/" target="_blank">Telegram</a>
+        </p>
+    </section>
+
+    <script>
+        const rotatingText = document.querySelector('.rotating-text');
+        
+        rotatingText.addEventListener('mouseenter', () => {
+            rotatingText.textContent = 'Trader';
+            rotatingText.style.background='linear-gradient  (yellow, red)'
+        });
+
+        rotatingText.addEventListener('mouseleave', () => {
+            rotatingText.textContent = 'Web Developer'; 
+            rotatingText.style.color='red'
+        });
+    </script>
+</body>
+</html>
